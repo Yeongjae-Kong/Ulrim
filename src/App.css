@@ -12,6 +12,65 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.background {
+  position: relative;
+  background-image :url("https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg");
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  height: 80vh;
+}
+
+.background2 {
+  position: relative;
+  background-image :url("https://cdn.pixabay.com/photo/2014/07/21/17/52/museum-398761__340.jpg");
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  height: 70vh;
+}
+
+.bg-cover {
+  position: absolute;
+  background-color : rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  z-index:1;
+}
+.content {
+  position: absolute;
+  top : 30%;
+  left : 50%;
+  transform: translate(-50%, 50%);
+  font-size :2.5rem;
+  color : white;
+  z-index: 2;
+  text-align: center;
+}
+
+.content2 {
+  position: absolute;
+  top : 30%;
+  left : 50%;
+  transform: translate(-50%, 50%);
+  font-size :3rem;
+  color : white;
+  z-index: 2;
+  text-align: center;
+}
+
+.text1{
+  font-size: 3 rem;
+  font-family: 'KoPub Batang', serif;
+}
+.container{
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.container2{
+  text-align: center;
+  font-family: 'Georgia', serif;
+  background-size: 100%;
+}
 
 .App-header {
   background-color: #282c34;
@@ -34,5 +93,10 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width:600px) {
+  html,body{
+    font-size: 12px;
   }
 }
