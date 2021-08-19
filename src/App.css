@@ -95,8 +95,8 @@
     transform: rotate(360deg);
   }
 }
-@media (max-width:600px) {
+@media (max-width:980px) {
   html,body{
-    font-size: 12px;
+    font-size: 11px;
   }
 }

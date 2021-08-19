@@ -8,7 +8,8 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './login.js';
 import Commu from './community.js';
 import Mall from './mall.js';
-
+import Amplify, {API, grahqlOperation} from 'aws-amplify';
+import awsconfig from './aws-exports';
 
 <link href="http://fonts.googleapis.com/earlyaccess/kopubbatang.css" rel="stylesheet">
 </link>
@@ -78,7 +79,7 @@ function App() {
 
       </BrowserRouter>
 
-    </div>
+    </div> 
   );
 }
 
