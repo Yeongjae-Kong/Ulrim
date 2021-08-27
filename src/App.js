@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ulrimLogo from './image/ulrimLogo.png';
 import Data from './data.js';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import SimpleBottomNavigation from './login.js';
+import SimpleBottomNavigation from './navigate.js';
 import Commu from './community.js';
 import Mall from './mall.js';
 import Amplify, {API, grahqlOperation} from 'aws-amplify';
@@ -17,6 +17,8 @@ import awsconfig from './aws-exports';
 function App() {
   let [clothes, clothesChange] = useState([Data]);
   return (
+    
+    <BrowserRouter>
     <div className="App">
       <Navbar bg="black" expand="lg">
       <Container>
@@ -34,12 +36,11 @@ function App() {
               <NavDropdown.Item href="/October2021">October 2021</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <SimpleBottomNavigation class = 'float-right'></SimpleBottomNavigation>
+          <SimpleBottomNavigation class = 'float-right' style={{textAlign:'center'}}></SimpleBottomNavigation>
         </Navbar.Collapse>
       </Container>
     </Navbar>
 
-    <BrowserRouter>
       <Route exact path="/"> 
         <div className = "background">
           <div>
@@ -77,9 +78,10 @@ function App() {
         </div>
       </Route>
 
-      </BrowserRouter>
 
     </div> 
+    
+    </BrowserRouter>
   );
 }
 

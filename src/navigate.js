@@ -18,7 +18,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
+    <BottomNavigation container alignItems='center'
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
