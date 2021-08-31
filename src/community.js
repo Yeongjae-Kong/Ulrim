@@ -91,7 +91,7 @@ Media.propTypes = {
   loading: PropTypes.bool,
 };
 
-export default function Commu() {
+function Commu() {
   return (
     <div>
       <Media loading />
@@ -99,3 +99,4 @@ export default function Commu() {
     </div>
   );
 }
+export default Commu;

@@ -11,14 +11,12 @@ import Mall from './mall.js';
 import Amplify, {API, grahqlOperation} from 'aws-amplify';
 import awsconfig from './aws-exports';
 
-<link href="http://fonts.googleapis.com/earlyaccess/kopubbatang.css" rel="stylesheet">
-</link>
-
 function App() {
   let [clothes, clothesChange] = useState([Data]);
   return (
     
     <BrowserRouter>
+
     <div className="App">
       <Navbar bg="black" expand="lg">
       <Container>
@@ -26,14 +24,13 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">About us</Nav.Link>
-            <Nav.Link href="/shop">Shop</Nav.Link>
-            <Nav.Link href="/community">Community</Nav.Link>
-            <Nav.Link href="/exhibition">Ulrim the Original</Nav.Link>
+            <Nav.Link> <Link to='/'>About us</Link></Nav.Link>
+            <Nav.Link> <Link to='/shop'> Shop </Link></Nav.Link>
+            <Nav.Link> <Link to='/community'>Community </Link></Nav.Link>
+            <Nav.Link> <Link to='/exhibition'>Ulrim the Original</Link></Nav.Link>
             <NavDropdown title="Collection" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/August2021">August 2021</NavDropdown.Item>
-              <NavDropdown.Item href="/September2021">September 2021</NavDropdown.Item>
-              <NavDropdown.Item href="/October2021">October 2021</NavDropdown.Item>
+              <NavDropdown.Item><Link to="/August2021">August 2021</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/October2021">October 2021</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <SimpleBottomNavigation class = 'float-right' style={{textAlign:'center'}}></SimpleBottomNavigation>
