@@ -29,11 +29,13 @@ function App() {
             <Nav.Link> <Link to='/community'>Community </Link></Nav.Link>
             <Nav.Link> <Link to='/exhibition'>Ulrim the Original</Link></Nav.Link>
             <NavDropdown title="Collection" id="basic-nav-dropdown">
-              <NavDropdown.Item><Link to="/August2021">August 2021</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/October2021">October 2021</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/august2021">August 2021</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/october2021">October 2021</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <SimpleBottomNavigation class = 'float-right' style={{textAlign:'center'}}></SimpleBottomNavigation>
+          <div style={{padding:'0px 0px 0px 110px'}}>
+            <SimpleBottomNavigation class = 'float-right'></SimpleBottomNavigation>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -75,6 +77,9 @@ function App() {
         </div>
       </Route>
 
+      <Route exact path='/august2021'>
+        <Mall></Mall>
+      </Route>
 
     </div> 
     
