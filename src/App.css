@@ -57,13 +57,15 @@
   text-align: center;
 }
 
-.text1{
-  font-size: 3 rem;
-  font-family: 'KoPub Batang', serif;
-}
 .container{
   text-align: center;
   font-family: 'Georgia', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.row{
+  font-family: 'Jua', sans-serif;
 }
 
 .container2{
