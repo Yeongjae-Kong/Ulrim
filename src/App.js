@@ -9,6 +9,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './navigate.js';
 import Commu from './community.js';
 import Mall from './mall.js';
+import KakaoLogin from './kakaologin.js';
 import exhib1 from './image/exhib1.jpg';
 import exhib2 from './image/exhib2.jpg';
 import exhib3 from './image/exhib3.jpg';
@@ -58,7 +59,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <div className = "background">
           <div>
           <p className = "content">Not us, Express you<br>
-          </br>Show your own style, Ulrim</p>
+          </br>Show your own style, ULRIM</p>
           </div>
           <div className = "bg-cover">
           </div>
@@ -109,6 +110,10 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <Mall></Mall>
       </Route>
 
+      <Route exact path='/account'>
+        <KakaoLogin></KakaoLogin>
+      </Route>
+
       <Route exact path='/community'>
         <Commu></Commu>
       </Route>
@@ -116,15 +121,13 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
       <Route exact path="/exhibition"> 
         <div className = "background2">
         <div>
-          <p className = "content">Ulrim the Original</p>
+          <h4 className = "content">ULRIM the Original</h4>
+          <p className = 'content2'><br></br> Comming Soon</p>
           </div>
           <div className = "bg-cover">
           </div>
         </div>
-        <div>
-          <br></br>
-          <p className ='text1'></p>
-        </div>
+
       </Route>
 
       <Route exact path='/august2021'>

@@ -6,6 +6,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import InfoIcon from '@material-ui/icons/Info';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -26,10 +27,10 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Account" color = 'black' icon={<AccountCircleIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Cart" icon={<AddShoppingCartIcon />} />
-      <BottomNavigationAction label="Info" icon={<InfoIcon />} />
+      <BottomNavigationAction label="Account" component={Link} to='/account' color = 'black' icon={<AccountCircleIcon />} />
+      <BottomNavigationAction label="Favorites"  component={Link} to='/favorites' icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Cart"  component={Link} to='/cart' icon={<AddShoppingCartIcon />} />
+      <BottomNavigationAction label="Info"  component={Link} to='/info' icon={<InfoIcon />} />
     </BottomNavigation>
   );
 }
