@@ -36,7 +36,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
           <Nav className="me-auto">
             <Nav.Link className='navlink'> <Link to='/' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
-            <Nav.Link className='navlink'> <Link to='/community' style ={{color:'gray', textDecoration:'none'}}>Community </Link></Nav.Link>
+            <Nav.Link className='navlink'> <Link to='/community' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/exhibition' style ={{color:'gray', textDecoration:'none'}}>ULRIM the Original</Link></Nav.Link>
             <NavDropdown className='navlink' title="Collection" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/august2021" style ={{color:'gray', textDecoration:'none'}}>August 2021</Link></NavDropdown.Item>
@@ -143,7 +143,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p style={{fontSize:'15px'}}>October, 2021</p>
             </div>
 
-           <Divider textAlign = 'left' variant="inset" component="li" />
+            <Divider style={{padding:'1px'}}/>
            <div className="container" style = {{padding:'50px 0px 50px 0px'}}>
            <div className="row">
            <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>

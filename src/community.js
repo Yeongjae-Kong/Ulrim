@@ -37,8 +37,8 @@ function Media(props) {
             <Skeleton animation="wave" variant="circle" width={40} height={40} />
           ) : (
             <Avatar
-              alt="Ted talk"
-              src="https://pbs.twimg.com/profile_images/877631054525472768/Xp5FAPD5_reasonably_small.jpg"
+              alt=""
+              src={require('./image/busanexhib1.png').default}
             />
           )
         }
@@ -53,18 +53,18 @@ function Media(props) {
           loading ? (
             <Skeleton animation="wave" height={10} width="80%" style={{ marginBottom: 6 }} />
           ) : (
-            'Ted'
+            'Jieun Kim'
           )
         }
-        subheader={loading ? <Skeleton animation="wave" height={10} width="40%" /> : '5 hours ago'}
+        subheader={loading ? <Skeleton animation="wave" height={10} width="40%" /> : 'Daegu'}
       />
       {loading ? (
         <Skeleton animation="wave" variant="rect" className={classes.media} />
       ) : (
         <CardMedia
           className={classes.media}
-          image="https://drive.google.com/file/d/1C0yfBFHggf--wmE92nN4WLDHIED4cdM9/view?usp=sharing"
-          title="Ted talk"
+          image={require('./image/pic1.jpg').default}
+          title=""
         />
       )}
 
@@ -94,7 +94,6 @@ Media.propTypes = {
 function Commu() {
   return (
     <div>
-      <Media loading />
       <Media />
     </div>
   );
