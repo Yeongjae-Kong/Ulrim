@@ -10,6 +10,7 @@ import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
+    padding:'0rem 0rem 0rem 15rem',
     width: 300,
   },
 });
@@ -19,7 +20,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation container alignItems='center'
+    <BottomNavigation alignItems='stretch'
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);

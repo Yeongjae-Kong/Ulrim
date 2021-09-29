@@ -63,7 +63,7 @@ function Media(props) {
       ) : (
         <CardMedia
           className={classes.media}
-          image="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/72bda89f-9bbf-4685-910a-2f151c4f3a8a/NicolaSturgeon_2019T-embed.jpg?w=512"
+          image="https://drive.google.com/file/d/1C0yfBFHggf--wmE92nN4WLDHIED4cdM9/view?usp=sharing"
           title="Ted talk"
         />
       )}
