@@ -130,7 +130,26 @@
     transform: rotate(360deg);
   }
 }
-@media (max-width:991px) {
+
+/*휴대폰화면*/
+@media (max-width:600px) {
+  html, body{
+    font-size: 0.5rem;
+  }
+  .background {
+    position: relative;
+    background-image :url("https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Georgia', serif;
+    height: 80vh;
+  }
+  .container3 {
+    padding: 4rem 0rem;
+  }
+}
+
+@media (min-width:600px) and (max-width:991px) {
   html,body{
     font-size: 0.7rem;
   }
@@ -141,5 +160,12 @@
   background-position: center;
   font-family: 'Georgia', serif;
   height: 80vh;
+  }
+}
+
+/*컴퓨터화면*/
+@media (min-width:992px) {
+  .container3 {
+    padding: 6rem 10rem;
   }
 }

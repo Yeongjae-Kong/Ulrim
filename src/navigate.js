@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
-    padding:'0rem 0rem 0rem 15rem',
+    padding:'0rem 0rem 0rem 7rem',
     width: 300,
   },
 });
@@ -20,7 +20,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation alignItems='stretch'
+    <BottomNavigation 
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
@@ -29,7 +29,7 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction label="Account" component={Link} to='/account' color = 'black' icon={<AccountCircleIcon />} />
-      <BottomNavigationAction label="Favorites"  component={Link} to='/favorites' icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Favorites"  component={Link} to='/favorites'  icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Cart"  component={Link} to='/cart' icon={<AddShoppingCartIcon />} />
       <BottomNavigationAction label="Info"  component={Link} to='/info' icon={<InfoIcon />} />
     </BottomNavigation>

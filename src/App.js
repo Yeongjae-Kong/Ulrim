@@ -73,9 +73,9 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
             <Divider style={{padding:'1px'}}/>
 
-            <div className="container" style = {{padding:'50px 0px 50px 0px'}}>
+            <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
             <div className="row">
-            <div className="col-md-4" style={{cursor: 'pointer'}}>
+            <div className="col-md-4" style={{cursor: 'pointer'}} style = {{padding:'0px 0px 50px 0px'}}>
               <a href="https://bongsanart.jung.daegu.kr/main/main.html"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -85,7 +85,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.07.26 ~ 21.10.03, 최수환</p>
            </div>
 
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://daegu.museum.go.kr/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -95,7 +95,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.07.13 ~ 21.10.10</p>
            </div>
 
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="http://www.dge.go.kr/dme/main.do"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -103,9 +103,10 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
             </a>
               <h4>대구교육박물관</h4>
               <p>21.06.17 ~ 21.10.17</p>
+
             </div>
             
-            <div className="col-md-4">
+            <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
               <a href="http://www.suchang.or.kr/su/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -115,7 +116,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.23 ~ 21.11.28</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="http://www.daeguphoto.com/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -125,7 +126,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.10 ~ 21.11.02</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.knmm.or.kr/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -144,7 +145,8 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
            <Divider textAlign = 'left' variant="inset" component="li" />
            <div className="container" style = {{padding:'50px 0px 50px 0px'}}>
-           <div className="row"><div className="col-md-4">
+           <div className="row">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://galleryjoy.com/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -154,7 +156,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.24 ~ 21.10.31</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.instagram.com/deepsleepcoffee_/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -164,7 +166,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.04 ~ 21.11.27, 조한솔</p>
            </div>
 
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.instagram.com/p/CTl82l-vxpO/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -174,7 +176,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.11 ~ 21.10.11</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.bscc.or.kr/citizen/01_perfor/?mcode=1001010400&mode=2&no=22752&page=1"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -184,7 +186,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.09.10 ~ 21.10.24</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.instagram.com/p/CR8qH8Zpqqc/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -194,7 +196,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
               <p>21.07.30 ~ 21.10.03</p>
            </div>
            
-           <div className="col-md-4">
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://www.goeunmuseum.kr/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -214,7 +216,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <August2021></August2021>
       </Route>
 
-      <Route exact path='/login'>
+      <Route exact path='/account'>
         <KakaoLogin></KakaoLogin>
       </Route>
 
