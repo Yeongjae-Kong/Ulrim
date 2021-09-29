@@ -7,6 +7,7 @@ import ulrimLogo from './image/ulrimLogo.png';
 import Data from './data.js';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './navigate.js';
+import Aboutus from './aboutus.js';
 import Commu from './community.js';
 import August2021 from './august2021.js';
 import KakaoLogin from './kakaologin.js';
@@ -34,7 +35,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='navlink'> <Link to='/' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
+            <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/community' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/exhibition' style ={{color:'gray', textDecoration:'none'}}>ULRIM the Original</Link></Nav.Link>
@@ -210,6 +211,10 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
            </div>
            
            </List>
+      </Route>
+
+      <Route exact path="/aboutus">
+        <Aboutus></Aboutus>
       </Route>
 
       <Route exact path="/shop">
