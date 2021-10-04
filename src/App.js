@@ -26,7 +26,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
   return (
     
-    <BrowserRouter>
+    <BrowserRouter> 
 
     <div className="App">
       <Navbar expand="lg">
@@ -67,6 +67,78 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
             maxWidth: 300,
             bgcolor: 'background.paper',
           }}>
+            <div className = 'location'>
+              <p>경기</p>
+              <p style={{fontSize:'15px'}}>October, 2021</p>
+            </div>
+
+            <Divider style={{padding:'1px'}}/>
+
+            <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
+            <div className="row">
+            <div className="col-md-4" style={{cursor: 'pointer'}} style = {{padding:'0px 0px 50px 0px'}}>
+              <a href="https://mimesisartmuseum.co.kr/%ED%98%84%EC%9E%AC%EC%A0%84%EC%8B%9CCurrent"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib1.jpg').default} width="90%" style={{padding:'50px 20px 50px 20px'}} ></img>
+              </a>
+              <h4>흐릿한 풍경</h4>
+              <p>21.09.16 ~ 21.10.17, 민병헌</p>
+           </div>
+
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
+            <a href="http://www.komacon.kr/comicsmuseum/show/plan_view.asp?eh_no=121/"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib2.gif').default} width="90%" style={{padding:'50px 20px 50px 20px'}}/>
+            </a>
+              <h4>새로운 연결: 다르게 바라보다</h4>
+              <p>21.09.04 ~ 21.10.10</p>
+           </div>
+
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
+            <a href="https://www.gcf.or.kr/modules/rent/event_fest_view.html?mc_code=1013&db_id=1116&page_type=info_list&hole=&state=exp&p=1&page_detail_type=exhibit"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib3.jpg').default} width="90%" style={{padding:'50px 20px 50px 20px'}}/>
+            </a>
+              <h4>평평-팽팽</h4>
+              <p>21.09.02 ~ 21.11.07</p>
+
+            </div>
+            
+            <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
+              <a href="https://www.gcf.or.kr/modules/rent/event_fest_view.html?mc_code=1013&db_id=1123&page_type=info_list&hole=&state=ing&p=1&page_detail_type=exhibit"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib4.jpg').default} width="90%" style={{padding:'50px 20px 50px 20px'}}/>
+              </a>
+              <h4>보구곶, 情을 엮다</h4>
+              <p>21.09.07 ~ 21.10.16</p>
+           </div>
+           
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
+            <a href="https://www.ayac.or.kr/base/ayac/performance/read?performanceNo=2587&menuLevel=2&menuNo=1"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib5.jpg').default} width="90%" style={{padding:'50px 20px 50px 20px'}}/>
+            </a>
+              <h4>여행갈까요</h4>
+              <p>21.09.02 ~ 21.10.10</p>
+           </div>
+           
+           <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
+            <a href="https://www.uilib.go.kr/art/board/view.do?menu_idx=79&manage_idx=73&board_idx=31256&viewPage=1"
+                target="_blank"
+                rel="noopener noreferrer">
+              <img src={require('./image/ggexhib6.jpg').default} width="90%" style={{padding:'50px 20px 50px 20px'}}/>
+            </a>
+              <h4>연결: 의정부미술문화축제</h4>
+              <p>21.07.28 ~ 21.10.27</p>
+           </div>
+           </div>
+           </div>
+
             <div className = 'location'>
               <p>대구</p>
               <p style={{fontSize:'15px'}}>October, 2021</p>
