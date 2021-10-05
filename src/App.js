@@ -31,7 +31,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
     <div className="App">
       <Navbar expand="lg">
       <Container>
-        <Navbar.Brand className='navlink' href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
