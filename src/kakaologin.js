@@ -17,7 +17,7 @@ const loginWithKakao = () => {
 
       
       window.Kakao.API.request({
-      url: "/v2/user/me",
+      url: "https://master.ulrim.amplifyapp.com",
       success: function ({ kakao_account }) {
         //어떤 정보 넘어오는지 확인
         console.log(kakao_account);
@@ -29,7 +29,7 @@ const loginWithKakao = () => {
 
         axios({
           method: "post",
-          url: "/v2/user/me",
+          url: "https://master.ulrim.amplifyapp.com",
           data: {
             "id": email,
             "nickname": profile.nickname,
@@ -40,7 +40,7 @@ const loginWithKakao = () => {
             if (res.token) {
             console.log(res);
             console.log('로그인에 성공하였습니다.')
-            window.history.push("/login");}
+            window.history.push("/account");}
             else {
               console.log('다시 확인해주세요.')
             }

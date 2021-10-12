@@ -8,13 +8,13 @@ import Data from './data.js';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './navigate.js';
 import Aboutus from './aboutus.js';
-import Commu from './community.js';
+import Artists from './Artists.js';
 import August2021 from './august2021.js';
 import KakaoLogin from './kakaologin.js';
+import Login from './login.js';
+import Info from './info.js';
 import socialLogin from './socialLogin.js';
 import {List, ListItem, ListItemText, ListItemAvatar, Avatar, Divider, useTheme, useMediaQuery} from '@material-ui/core';
-import Amplify, {API, grahqlOperation} from 'aws-amplify';
-import awsconfig from './aws-exports';
 
 
 function App() {
@@ -37,7 +37,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
           <Nav className="me-auto">
             <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
-            <Nav.Link className='navlink'> <Link to='/community' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
+            <Nav.Link className='navlink'> <Link to='/artists' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/exhibition' style ={{color:'gray', textDecoration:'none'}}>ULRIM the Original</Link></Nav.Link>
             <NavDropdown className='navlink' title="Collection" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/august2021" style ={{color:'gray', textDecoration:'none'}}>August 2021</Link></NavDropdown.Item>
@@ -293,12 +293,22 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <August2021></August2021>
       </Route>
 
+
+      <Route exact path='/artists'>
+        <Artists></Artists>
+      </Route>
+
+
       <Route exact path='/account'>
         <KakaoLogin></KakaoLogin>
       </Route>
-
-      <Route exact path='/community'>
-        <Commu></Commu>
+      
+      <Route exact path='/login'>
+        <Login></Login>
+      </Route>
+          
+      <Route exact path='/info'>
+        <Info></Info>
       </Route>
 
       <Route exact path="/exhibition"> 

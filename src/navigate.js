@@ -3,9 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import InfoIcon from '@material-ui/icons/Info';
+import ExitToAppSharpIcon from '@material-ui/icons/ExitToAppSharp';
 import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
@@ -28,9 +27,8 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Account" component={Link} to='/account' color = 'black' icon={<AccountCircleIcon />} />
-      <BottomNavigationAction label="Favorites"  component={Link} to='/favorites'  icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Cart"  component={Link} to='/cart' icon={<AddShoppingCartIcon />} />
+      <BottomNavigationAction label="My Page" component={Link} to='/account' color = 'black' icon={<AccountCircleIcon />} />
+      <BottomNavigationAction label="Login"  component={Link} to='/login'  icon={<ExitToAppSharpIcon />} />
       <BottomNavigationAction label="Info"  component={Link} to='/info' icon={<InfoIcon />} />
     </BottomNavigation>
   );

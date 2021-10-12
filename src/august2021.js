@@ -47,75 +47,82 @@ function August2021() {
         </List>
         <Divider style={{padding:'1px'}}/>
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/98.03.05/?hl=ko"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/98.03.05/?hl=ko"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }98.03.05</p>
           </a>
         </div>
-        <img src={require('./image/p1model1.png').default} style={{padding:'2rem 1rem'}}/>
+        <img src={require('./image/p1model1.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/p/CTSEtwQFRek/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/p/CTSEtwQFRek/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }chae_dahaee</p>
           </a>
         </div>
-        <img src={require('./image/p1model2.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model2.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/p/CTRTKBQBbHZ/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/p/CTRTKBQBbHZ/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }do__ki</p>
           </a>
         </div>
-        <img src={require('./image/p1model3.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model3.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/hyejeong__u/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/hyejeong__u/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }hyejeong__u</p>
           </a>
         </div>
-        <img src={require('./image/p1model4.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model4.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
-        <img src={require('./image/p1model5.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model5.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/y0x_x0n/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/y0x_x0n/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }y0x_x0n</p>
           </a>
         </div>
-        <img src={require('./image/p1model6.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model6.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/p/CTPMeaRv5a2/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/p/CTPMeaRv5a2/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }gundododo</p>
           </a>
         </div>
-        <img src={require('./image/p1model7.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model7.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
         
         
         <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a href="https://www.instagram.com/p/CTO3HANFIqz/"
+          <a style ={{color:'black', textDecoration:'none'}}
+                href="https://www.instagram.com/p/CTO3HANFIqz/"
                 target="_blank"
                 rel="noopener noreferrer">
           <p>{<InstagramIcon/> }olerror__</p>
           </a>
         </div>
-        <img src={require('./image/p1model8.png').default} style={{padding:'2rem 13rem'}}/>
+        <img src={require('./image/p1model8.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
 
 
     </div>
