@@ -29,7 +29,7 @@ const Login = () => {
 
   return authState === AuthState.SignedIn && user ? (
       <div>
-          <div className='container' style={{padding:'5rem'}}>{user.username}님의 ULRIM 방문을 환영합니다.</div>
+          <div className='instatext' style={{padding:'5rem'}}>{user.username}님의 ULRIM 방문을 환영합니다.</div>
           <AmplifySignOut />
       </div>
     ) : (

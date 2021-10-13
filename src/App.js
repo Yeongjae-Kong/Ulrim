@@ -9,7 +9,9 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './navigate.js';
 import Aboutus from './aboutus.js';
 import Artists from './Artists.js';
+import Account from './account.js';
 import August2021 from './august2021.js';
+import November2021 from './november2021.js';
 import KakaoLogin from './kakaologin.js';
 import Login from './login.js';
 import Info from './info.js';
@@ -22,7 +24,7 @@ function App() {
   
 //media query
 const theme = useTheme();
-const matches = useMediaQuery(theme.breakpoints.down('xs'));
+const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     
@@ -41,7 +43,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
             <Nav.Link className='navlink'> <Link to='/exhibition' style ={{color:'gray', textDecoration:'none'}}>ULRIM the Original</Link></Nav.Link>
             <NavDropdown className='navlink' title="Collection" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/august2021" style ={{color:'gray', textDecoration:'none'}}>August 2021</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/october2021" style ={{color:'gray', textDecoration:'none'}}>October 2021</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/november2021" style ={{color:'gray', textDecoration:'none'}}>November 2021</Link></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Grid alignItems='center' justify = {matches? 'center' : 'flex-end'}>
@@ -298,8 +300,12 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <Artists></Artists>
       </Route>
 
-
       <Route exact path='/account'>
+        <Account>
+        </Account>
+      </Route>
+
+      <Route exact path='/kakaologin'>
         <KakaoLogin></KakaoLogin>
       </Route>
       
@@ -325,6 +331,10 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
       <Route exact path='/august2021'>
         <August2021></August2021>
+      </Route>
+
+      <Route exact path='/november2021'>
+        <November2021></November2021>
       </Route>
 
     </div> 

@@ -8,9 +8,7 @@ import ExitToAppSharpIcon from '@material-ui/icons/ExitToAppSharp';
 import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
-  root: {
-    padding:'0rem 0rem 0rem 7rem',
-    width: 300,
+  root: {padding:'0rem 8rem'
   },
 });
 
