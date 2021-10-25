@@ -1,18 +1,13 @@
 import React, { useEffect, Component} from 'react';
-import { useHistory } from "react-router-dom";
-import { Header } from 'semantic-ui-react';
-import App from './App.js';
 import Amplify, {Auth, Hub} from 'aws-amplify';
 import aws_exports from './aws-exports';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router-dom'
 import awsconfig from './aws-exports';
-import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth/lib/types";
-import { applyPolyfills, defineCustomElements, } from '@aws-amplify/ui-components/loader';
-import { CognitoUser } from 'amazon-cognito-identity-js';
 import { AmplifyAuthenticator, AmplifySignUp, AmplifySignIn } from '@aws-amplify/ui-react';
 import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+import account from './account.js';
 
 Amplify.configure(awsconfig);
 

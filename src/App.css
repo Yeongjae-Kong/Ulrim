@@ -40,6 +40,11 @@ amplify-sign-in {
   text-decoration-color : black;
 }
 
+.text-bg {
+  background-size: cover;
+  background-color:rgba(0,0,0,0.1);
+  padding:50px 200px;
+}
 .background {
   position: relative;
   background-image :url("./image/background1.jpg");

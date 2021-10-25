@@ -11,6 +11,8 @@ import IconButton from '@material-ui/core/IconButton';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Skeleton from '@material-ui/lab/Skeleton';
 import Box from '@material-ui/core/Box';
+import Fade from 'react-reveal/Fade';
+
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -31,8 +33,9 @@ function Media(props) {
   return (
     
     <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
+    <Fade>
     <div className="row">
-    <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
+    <div className="col-md-12" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
   
       <Box style={{padding:'20px 20px'}} mx='auto'>
       <Card className={classes.card}>
@@ -99,7 +102,7 @@ function Media(props) {
 
    </div>
    
-   <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
+   {/* <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
       
       <a href="https://www.instagram.com/seheemoon/?hl=ko"
           target="_blank"
@@ -168,9 +171,12 @@ function Media(props) {
         </CardContent>
       </Card>
       </Box>
-     </div>
+     </div> */}
+
+{/* ctrl+/ 전체주석처리 */}
 
    </div>
+   </Fade>
    </div>
 
    
