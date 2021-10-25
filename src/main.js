@@ -34,9 +34,10 @@ class Main extends Component {
 
             <Divider style={{padding:'1px'}}/>
 
-            <Fade>
+            
             <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
             <div className="row">
+            <Fade>
             <div className="col-md-4" style={{cursor: 'pointer'}} style = {{padding:'0px 0px 50px 0px'}}>
                 <a href="https://mimesisartmuseum.co.kr/%ED%98%84%EC%9E%AC%EC%A0%84%EC%8B%9CCurrent"
                 target="_blank"
@@ -97,9 +98,9 @@ class Main extends Component {
                 <h4>연결: 의정부미술문화축제</h4>
                 <p>21.07.28 ~ 21.10.27</p>
             </div>
-            </div>
-            </div>
             </Fade>
+            </div>
+            </div>
 
             <div className = 'location'>
                 <p>대구</p>
@@ -108,10 +109,9 @@ class Main extends Component {
 
             <Divider style={{padding:'1px'}}/>
 
-            <Fade>
-
             <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
             <div className="row">
+            <Fade>
             <div className="col-md-4" style={{cursor: 'pointer'}} style = {{padding:'0px 0px 50px 0px'}}>
                 <a href="https://bongsanart.jung.daegu.kr/main/main.html"
                 target="_blank"
@@ -172,9 +172,9 @@ class Main extends Component {
                 <h4>국립해양박물관</h4>
                 <p>21.05.18 ~ 21.10.10</p>
             </div>
-            </div>
-            </div>
             </Fade>
+            </div>
+            </div>
 
             <div className = 'location'>
                 <p>부산</p>
@@ -183,9 +183,9 @@ class Main extends Component {
 
             <Divider style={{padding:'1px'}}/>
 
-            <Fade>
             <div className="container" style = {{padding:'50px 0px 50px 0px'}}>
             <div className="row">
+            <Fade>
             <div className="col-md-4" style = {{padding:'0px 0px 50px 0px'}}>
             <a href="https://galleryjoy.com/"
                 target="_blank"
@@ -245,10 +245,9 @@ class Main extends Component {
                 <h4>강운구: 사람의 그 때</h4>
                 <p>21.09.11 ~ 21.12.26</p>
             </div>
-
-            </div>
-            </div>
             </Fade>
+            </div>
+            </div>
 
             </List>
             </div>

@@ -25,19 +25,19 @@ function App() {
   
 //media query
 const theme = useTheme();
-const matches = useMediaQuery(theme.breakpoints.down('sm'));
+const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
   return (
     
     <BrowserRouter> 
 
-    <div className="App">
+    <div>
       <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className='navsize'>
             <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/artists' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
@@ -48,7 +48,7 @@ const matches = useMediaQuery(theme.breakpoints.down('sm'));
             </NavDropdown>
           </Nav>
           <Grid alignItems='center' justify = {matches? 'center' : 'flex-end'}>
-            <SimpleBottomNavigation ></SimpleBottomNavigation>
+            <SimpleBottomNavigation className='navsize'></SimpleBottomNavigation>
           </Grid>
         </Navbar.Collapse>
       </Container>

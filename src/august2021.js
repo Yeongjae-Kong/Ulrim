@@ -18,17 +18,16 @@ function August2021() {
       <img src={clothes1Front} width="100%" alt='' />
     </div>
 
-    <Slide right> 
+    <Fade> 
     <div className="col-md-6 mt-4" style={{padding:'50px 0px 0px 0px'}}>
       <h4 className="pt-5">ULRIM Project 1</h4>
       <h6>Design by Jieun Kim</h6>
       <p>37500 KRW</p>
       <button className="btn btn-danger" onClick={() => finish()}>Pre-order</button>
     </div>
-    </Slide>
+    </Fade>
     <div className="container2">
-      <Slide bottom> 
-      <img src={require('./image/jieunProfile.jpg').default} width='90%'/></Slide>
+      <img src={require('./image/jieunProfile.jpg').default} width='90%'/>
       <img src ={project1size} width="100%" alt=''>
       </img>
       <div className='container3'>
