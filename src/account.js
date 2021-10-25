@@ -47,7 +47,7 @@ Amplify.configure(awsconfig);
   }, []);
     
       return authState === AuthState.SignedIn && user ? (
-        <div>
+        <div style={{textAlign:'center'}}>
           <Card className={classes.root} variant="outlined">
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>

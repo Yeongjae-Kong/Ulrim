@@ -33,11 +33,11 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
     <div>
       <Navbar expand="lg">
-      <Container>
+      <Container className='navcontainer'>
         <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className='navsize'>
+        <Navbar.Collapse >
+          <Nav className='me-auto'>
             <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/artists' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
@@ -48,7 +48,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
             </NavDropdown>
           </Nav>
           <Grid alignItems='center' justify = {matches? 'center' : 'flex-end'}>
-            <SimpleBottomNavigation className='navsize'></SimpleBottomNavigation>
+            <SimpleBottomNavigation></SimpleBottomNavigation>
           </Grid>
         </Navbar.Collapse>
       </Container>
