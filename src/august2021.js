@@ -37,7 +37,7 @@ function August2021() {
       <img src={require('./image/clothes1Front.png').default} width="100%" alt=''/>
       </div>
       <div className='container3'>
-      <img src={require('./image/clothes1back.png').default} width="100%" alt=''/>
+      <img src={require('./image/clothes1Back.png').default} width="100%" alt=''/>
       </div>
       <List
             sx={{
