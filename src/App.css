@@ -30,8 +30,8 @@ amplify-sign-in {
 }
 
 .navlink {color: gray;
-  
 }
+
 .navlink:hover {background-color: rgba(0,0,0,0.02);
 }
 
@@ -40,36 +40,6 @@ amplify-sign-in {
   text-decoration-color : black;
 }
 
-.text-bg {
-  background-size: cover;
-  background-color:rgba(0,0,0,0.1);
-  padding:50px 200px;
-}
-.background {
-  position: relative;
-  background-image :url("./image/background1.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: 'Georgia', serif;
-  height: 80vh;
-}
-
-.background2 {
-  position: relative;
-  background-image :url("https://cdn.pixabay.com/photo/2014/07/21/17/52/museum-398761__340.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: 'Georgia', serif;
-  height: 70vh;
-}
-
-.bg-cover {
-  position: absolute;
-  background-color : rgba(0,0,0,0.2);
-  height: 100%;
-  width: 100%;
-  z-index:1;
-}
 .col-md-4 {
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -87,53 +57,9 @@ amplify-sign-in {
 }
 .img {width:225px; height:180px; overflow:hidden }   /* 부모를 벗어나지 않고 내부 이미지만 확대 */
 
-.content {
-  position: absolute;
-  top : 30%;
-  left : 50%;
-  transform: translate(-50%, 50%);
-  font-size :2rem;
-  color : white;
-  z-index: 2;
-  text-align: center;
-}
-
-.content2 {
-  position: absolute;
-  top : 30%;
-  left : 50%;
-  transform: translate(-50%, 50%);
-  font-size :3rem;
-  color : white;
-  z-index: 2;
-  text-align: center;
-}
-
-.container{
-  text-align: center;
-  font-family: 'Georgia', serif;
-}
-
 .row{
   text-align: center;
   font-family: 'Jua', sans-serif;
-}
-
-.location{
-  position: relative;
-  font-family: 'Jua', sans-serif;
-  font-size: 2rem;
-  text-align: left;
-  padding-left: 3rem;
-  padding-top:1rem;
-}
-
-.instatext{
-  position: relative;
-  font-family: 'Jua', sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top:1rem;
 }
 
 .container2{
@@ -157,6 +83,7 @@ amplify-sign-in {
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -166,7 +93,7 @@ amplify-sign-in {
   }
 }
 
-/*휴대폰화면*/
+/*휴대폰스크린*/
 @media screen and (max-width:600px) {
   
 	.content-box { width: 100% !important; }
@@ -189,20 +116,11 @@ amplify-sign-in {
     overflow-x:hidden;
   }
 
-
   body{
     font-size: 0.6rem;
     overflow-x:hidden;
   }
 
-  .background {
-    position: relative;
-    background-image :url("./image/background1.jpg");
-    background-size: cover;
-    background-position: center;
-    font-family: 'Georgia', serif;
-    height: 80vh;
-  }
   .container3 {
     padding: 4rem 0rem;
   }
@@ -212,17 +130,9 @@ amplify-sign-in {
   html, body{
     font-size: 0.7rem;
   }
-  .background {
-  position: relative;
-  background-image :url("./image/background1.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: 'Georgia', serif;
-  height: 80vh;
-  }
 }
 
-/*컴퓨터화면*/
+/*컴퓨터스크린*/
 @media (min-width:992px) {
   .container3 {
     padding: 6rem 10rem;

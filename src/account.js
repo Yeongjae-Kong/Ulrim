@@ -57,12 +57,11 @@ Amplify.configure(awsconfig);
                 {user.username}님, 환영합니다.
               </Typography>
               <Typography className={classes.title} color="textSecondary">
-              해당 페이지의 세부 내용은 리뉴얼 중에 있습니다. <br/> 빠른 시일 내에 찾아뵙겠습니다 :) 
-                <br />
+              해당 페이지의 세부 내용은 리뉴얼 중에 있습니다. <br/> 빠른 시일 내에 찾아뵙겠습니다 :) <br />
               </Typography>
               <Typography className={classes.pos} variant="body2" component="p">
                 Not us, Express you
-                <br />
+                <br/>
                 Show your own style, ULRIM
                 <br></br>
               </Typography>

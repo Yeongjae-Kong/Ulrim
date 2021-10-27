@@ -1,24 +1,23 @@
 import React, {useState} from 'react'
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
-import {Grid, Box} from '@material-ui/core'
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import {Grid} from '@material-ui/core'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ulrimLogo from './image/ulrimLogo.png';
 import Main from './main.js'
 import Data from './data.js';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import SimpleBottomNavigation from './navigate.js';
 import Aboutus from './aboutus.js';
 import Artists from './Artists.js';
+import Exhibition from './exhibition.js';
 import Account from './account.js';
 import August2021 from './august2021.js';
 import November2021 from './november2021.js';
-import KakaoLogin from './kakaologin.js';
 import Login from './login.js';
 import Info from './info.js';
-import socialLogin from './socialLogin.js';
-import {List, ListItem, ListItemText, ListItemAvatar, Avatar, Divider, useTheme, useMediaQuery} from '@material-ui/core';
-
+import {useTheme, useMediaQuery} from '@material-ui/core';
+import Fade from 'react-reveal/Fade';
 
 function App() {
   let [clothes, clothesChange] = useState([Data]);
@@ -28,15 +27,15 @@ const theme = useTheme();
 const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
   return (
+    <BrowserRouter>
     
-    <BrowserRouter> 
-
     <div>
+
       <Navbar expand="lg">
       <Container className='navcontainer'>
         <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse >
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='me-auto'>
             <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
             <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
@@ -66,18 +65,16 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         <August2021></August2021>
       </Route>
 
-
       <Route exact path='/artists'>
         <Artists></Artists>
       </Route>
 
-      <Route exact path='/account'>
-        <Account>
-        </Account>
+      <Route exact path="/exhibition">
+        <Exhibition></Exhibition>
       </Route>
 
-      <Route exact path='/kakaologin'>
-        <KakaoLogin></KakaoLogin>
+      <Route exact path='/account'>
+        <Account></Account>
       </Route>
       
       <Route exact path='/login'>
@@ -86,18 +83,6 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
           
       <Route exact path='/info'>
         <Info></Info>
-      </Route>
-
-      <Route exact path="/exhibition"> 
-        <div className = "background2">
-        <div>
-          <h4 className = "content">ULRIM the Original</h4>
-          <p className = 'content2'><br></br> Comming Soon</p>
-          </div>
-          <div className = "bg-cover">
-          </div>
-        </div>
-
       </Route>
 
       <Route exact path='/august2021'>
@@ -109,7 +94,6 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
       </Route>
 
     </div> 
-    
     </BrowserRouter>
   );
 }

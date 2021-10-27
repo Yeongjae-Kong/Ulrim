@@ -1,3 +1,4 @@
+import './info.css';
 const Info = () => {
 return (
   <div className='text-bg' style={{padding:'5rem 4rem'}}>

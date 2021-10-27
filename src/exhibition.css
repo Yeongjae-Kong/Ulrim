@@ -1,0 +1,40 @@
+
+.background2 {
+    position: relative;
+    background-image :url("https://cdn.pixabay.com/photo/2014/07/21/17/52/museum-398761__340.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Georgia', serif;
+    height: 85vh;
+  }
+  
+  .background2-cover {
+    position: absolute;
+    background-color : rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    z-index:1;
+  }
+  
+  .content {
+    position: absolute;
+    top : 30%;
+    left : 50%;
+    transform: translate(-50%, 50%);
+    font-size :2rem;
+    color : white;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .content2 {
+    position: absolute;
+    top : 30%;
+    left : 50%;
+    transform: translate(-50%, 50%);
+    font-size :3rem;
+    color : white;
+    z-index: 2;
+    text-align: center;
+  }
+  

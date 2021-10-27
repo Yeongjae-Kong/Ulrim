@@ -33,7 +33,7 @@ function Media(props) {
   return (
     
     <div className="container" style = {{padding:'30px 0px 0px 0px'}}>
-    <Fade>
+    <Fade delay={500}>
     <div className="row">
     <div className="col-md-12" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
   
@@ -71,7 +71,7 @@ function Media(props) {
           <Skeleton animation="wave" variant="rect" className={classes.media} />
         ) : (
           
-        <a href="https://mimesisartmuseum.co.kr/%ED%98%84%EC%9E%AC%EC%A0%84%EC%8B%9CCurrent"
+        <a href="https://www.instagram.com/orca_723/?hl=ko"
           target="_blank"
           rel="noopener noreferrer">
           <CardMedia

@@ -1,10 +1,7 @@
 import InstagramIcon from '@material-ui/icons/Instagram';
 import {List, Divider} from '@material-ui/core';
-import clothes1Front from './image/clothes1Front.png';
-import project1size from './image/project1size.jpg';
-import clothes1back from './image/clothes1Back.png';
-import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
+import './shop.css';
 
 function finish() {
   alert('판매 종료 되었습니다.');
@@ -14,32 +11,33 @@ function August2021() {
   return (
   <div className="container" style={{padding:'100px 50px'}}>
   <div className="row">
+    <Fade delay={500}>
     <div className="col-md-6">
-      <img src={clothes1Front} width="100%" alt='' />
+      <img src={require('./image/clothes1front.png').default} width="100%" alt=''/>
     </div>
+    </Fade>
 
-    <Fade> 
-    <div className="col-md-6 mt-4" style={{padding:'50px 0px 0px 0px'}}>
+    <Fade delay={500}>
+    <div className="col-md-6 mt-4" style={{padding:'50px 0px 50px 0px'}}>
       <h4 className="pt-5">ULRIM Project 1</h4>
       <h6>Design by Jieun Kim</h6>
       <p>37500 KRW</p>
       <button className="btn btn-danger" onClick={() => finish()}>Pre-order</button>
     </div>
     </Fade>
+
     <div className="container2">
-      <img src={require('./image/jieunProfile.jpg').default} width='90%'/>
-      <img src ={project1size} width="100%" alt=''>
-      </img>
+    <Fade delay={150}>
+      <img src={require('./image/jieunProfile.jpg').default} width='90%' alt=''/>
+      <img src={require('./image/project1size.jpg').default} width="100%" alt=''/>
       <div className='container3'>
-      <Fade> 
       <img src={require('./image/ulrimmodel.jpg').default} width="90%"/>
-      </Fade>
       </div>
       <div className='container3'>
-      <img src ={clothes1Front} width = '100%' alt=''></img>
+      <img src={require('./image/clothes1front.png').default} width="100%" alt=''/>
       </div>
       <div className='container3'>
-      <img src ={clothes1back} width = '100%' alt=''></img>
+      <img src={require('./image/clothes1back.png').default} width="100%" alt=''/>
       </div>
       <List
             sx={{
@@ -131,6 +129,7 @@ function August2021() {
         <img src={require('./image/p1model8.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
 
 
+      </Fade>
     </div>
   </div>
 </div>);

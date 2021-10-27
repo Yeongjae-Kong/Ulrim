@@ -1,0 +1,89 @@
+
+  .background {
+    position: relative;
+    background-image :url("./image/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Georgia', serif;
+    height: 80vh;
+  }
+
+  .background-cover {
+    position: absolute;
+    background-color : rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    z-index:1;
+  }
+
+  .content {
+    position: absolute;
+    top : 30%;
+    left : 50%;
+    transform: translate(-50%, 50%);
+    font-size :2rem;
+    color : white;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .location{
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 3rem;
+    padding-top:1rem;
+  }
+  
+  .container{
+    text-align: center;
+    font-family: 'Georgia', serif;
+  }
+
+  
+/*휴대폰스크린*/
+@media screen and (max-width:600px) {
+  
+	.content-box { width: 100% !important; }
+	.content-body { width: 100% !important; }
+  .navbar-collapse.collapse.show{
+    overflow-x:hidden;
+  }
+  .content {
+    position: absolute;
+    top : 30%;
+    left : 50%;
+    transform: translate(-50%, 50%);
+    font-size :2.2rem;
+    color : white;
+    z-index: 2;
+    text-align: center;
+  }
+  html{
+    font-size:0.6rem;
+    overflow-x:hidden;
+  }
+
+  body{
+    font-size: 0.6rem;
+    overflow-x:hidden;
+  }
+
+  .container3 {
+    padding: 4rem 0rem;
+  }
+}
+
+@media (min-width:600px) and (max-width:991px) {
+  html, body{
+    font-size: 0.7rem;
+  }
+}
+
+/*컴퓨터스크린*/
+@media (min-width:992px) {
+  .container3 {
+    padding: 6rem 10rem;
+  }
+}

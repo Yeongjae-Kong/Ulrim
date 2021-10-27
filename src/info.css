@@ -1,0 +1,5 @@
+.text-bg {
+    background-size: cover;
+    background-color:rgba(0,0,0,0.15);
+    padding:50px 200px;
+  }
