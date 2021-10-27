@@ -13,7 +13,7 @@ function August2021() {
   <div className="row">
     <Fade delay={500}>
     <div className="col-md-6">
-      <img src={require('./image/clothes1front.png').default} width="100%" alt=''/>
+      <img src={require('./image/clothes1Front.png').default} width="100%" alt=''/>
     </div>
     </Fade>
 
@@ -34,7 +34,7 @@ function August2021() {
       <img src={require('./image/ulrimmodel.jpg').default} width="90%"/>
       </div>
       <div className='container3'>
-      <img src={require('./image/clothes1front.png').default} width="100%" alt=''/>
+      <img src={require('./image/clothes1Front.png').default} width="100%" alt=''/>
       </div>
       <div className='container3'>
       <img src={require('./image/clothes1back.png').default} width="100%" alt=''/>
