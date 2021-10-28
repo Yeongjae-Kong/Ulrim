@@ -26,11 +26,12 @@ function App() {
 const theme = useTheme();
 const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
+/*폰스크린*/
+if (matches) {
   return (
     <BrowserRouter>
-    
     <div>
-
+    <Fade top>
       <Navbar expand="lg">
       <Container className='navcontainer'>
         <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
@@ -52,6 +53,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Fade>
 
       <Route exact path="/"> 
       <Main></Main>
@@ -96,6 +98,78 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
     </div> 
     </BrowserRouter>
   );
+}
+/*컴퓨터스크린*/
+else {
+  return (
+  <BrowserRouter>
+  <div>
+    <Navbar expand="lg">
+    <Container className='navcontainer'>
+      <Navbar.Brand href="/"><img src ={ulrimLogo} height='50px' width='50px' /></Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className='me-auto'>
+          <Nav.Link className='navlink'> <Link to='/aboutus' style ={{color:'gray', textDecoration:'none'}} >About us</Link></Nav.Link>
+          <Nav.Link className='navlink'> <Link to='/shop' style ={{color:'gray', textDecoration:'none'}}> Shop </Link></Nav.Link>
+          <Nav.Link className='navlink'> <Link to='/artists' style ={{color:'gray', textDecoration:'none'}}> Artists </Link></Nav.Link>
+          <Nav.Link className='navlink'> <Link to='/exhibition' style ={{color:'gray', textDecoration:'none'}}>ULRIM the Original</Link></Nav.Link>
+          <NavDropdown className='navlink' title="Collection" id="basic-nav-dropdown">
+            <NavDropdown.Item><Link to="/august2021" style ={{color:'gray', textDecoration:'none'}}>August 2021</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to="/november2021" style ={{color:'gray', textDecoration:'none'}}>November 2021</Link></NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Grid alignItems='center' justify = {matches? 'center' : 'flex-end'}>
+          <SimpleBottomNavigation></SimpleBottomNavigation>
+        </Grid>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+
+    <Route exact path="/"> 
+    <Main></Main>
+    </Route>
+
+    <Route exact path="/aboutus">
+      <Aboutus></Aboutus>
+    </Route>
+
+    <Route exact path="/shop">
+      <August2021></August2021>
+    </Route>
+
+    <Route exact path='/artists'>
+      <Artists></Artists>
+    </Route>
+
+    <Route exact path="/exhibition">
+      <Exhibition></Exhibition>
+    </Route>
+
+    <Route exact path='/account'>
+      <Account></Account>
+    </Route>
+    
+    <Route exact path='/login'>
+      <Login></Login>
+    </Route>
+        
+    <Route exact path='/info'>
+      <Info></Info>
+    </Route>
+
+    <Route exact path='/august2021'>
+      <August2021></August2021>
+    </Route>
+
+    <Route exact path='/november2021'>
+      <November2021></November2021>
+    </Route>
+
+  </div> 
+  </BrowserRouter>
+);
+}
 }
 
 export default App;

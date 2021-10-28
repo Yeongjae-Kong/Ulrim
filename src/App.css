@@ -111,8 +111,11 @@ amplify-sign-in {
     z-index: 2;
     text-align: center;
   }
+  .navlink {
+    font-size:1.25rem;
+  }
   html{
-    font-size:0.6rem;
+    font-size:0.8rem;
     overflow-x:hidden;
   }
 

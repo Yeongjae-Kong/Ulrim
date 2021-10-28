@@ -9,14 +9,14 @@ function Main() {
 return (
     <div>
         <div className = "background">
+
         <div className = 'content'>
-        <p><Fade delay={600}>Not us, Express you
-        </Fade></p>
-        <p><Fade delay={1200}>Show your own style, ULRIM</Fade></p>
+        <p><Fade delay={700}>Not us, Express you</Fade></p>
+        <p><Fade delay={1400}>Show your own style, ULRIM</Fade></p>
         </div>
 
-        <div className = "background-cover">
-        </div>
+        <div className = "background-cover"></div>
+
         </div>
 
     <List
