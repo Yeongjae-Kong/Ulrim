@@ -9,7 +9,7 @@ const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
     return (
     <div className = {matches? 'phonescreen' : 'comscreen'}>
-    <img src={require('./image/aboutus2.jpg').default}  width="100%" style={{padding:'50px 20px 50px 20px'}} />
+    <img src={require('./image/aboutus3.png').default}  width="100%" style={{padding:'50px 20px 50px 20px'}} />
     </div>
     );
 }
