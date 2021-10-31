@@ -3,9 +3,12 @@ import Fade from 'react-reveal/Fade';
 import './main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List, Divider} from '@material-ui/core';
+import {useTheme, useMediaQuery} from '@material-ui/core';
 
 function Main() {
 
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down('xs'));
 return (
     <div>
         <div className = "background">
@@ -20,10 +23,10 @@ return (
 
         </div>
 
-        <div style={{padding:'50px 0px 50px 0px'}}>
+        <div style={{padding:'100px 0px 0px 0px'}}>
         <p align="middle">
 
-        <iframe width="90%" height="315" src="https://www.youtube.com/embed/Uzx7cnBrFUM"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe>
+        <iframe width={matches? '90%' : '50%'} height={matches? '300' : '515'} src="https://www.youtube.com/embed/Uzx7cnBrFUM"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe>
         </p></div>
   <div className="container" style={{padding:'100px 50px'}}>
   <div className="row">
@@ -34,7 +37,7 @@ return (
     </Fade>
 
     <Fade delay={500}>
-    <div className="col-md-6 mt-4" style={{padding:'100px 0px 200px 0px'}}>
+    <div className="col-md-6 mt-4" >
       <h4 className="pt-5">ULRIM Project 2</h4>
       <h6>Design by Sehee Moon</h6>
       <p style={{textDecoration:'line-through'}}>109,000 KRW</p>
@@ -47,7 +50,7 @@ return (
     </div>
     </Fade>
 
-    <div className="container2">
+    <div className="container2" style={{padding:'100px 0px 0px 0px'}}>
       <img src={require('./image/moonpage/001.jpg').default} width='100%' alt=''/>
       <img src={require('./image/moonpage/002.jpg').default} width="100%" alt=''/>
       <img src={require('./image/moonpage/003.jpg').default} width="100%" alt=''/>

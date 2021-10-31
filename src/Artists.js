@@ -102,7 +102,7 @@ function Media(props) {
 
    </div>
    
-   {/* <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
+   <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
       
       <a href="https://www.instagram.com/seheemoon/?hl=ko"
           target="_blank"
@@ -164,14 +164,14 @@ function Media(props) {
           ) : (
             <Typography variant="body2" color="textSecondary" component="p">
               {
-                "Comming soon, would look forward to it."
+                "Facing myself through the ocean."
               }
             </Typography>
           )}
         </CardContent>
       </Card>
       </Box>
-     </div> */}
+     </div>
 
 {/* ctrl+/ 전체주석처리 */}
 
