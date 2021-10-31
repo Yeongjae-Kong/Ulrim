@@ -2,137 +2,58 @@ import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import {List, Divider} from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
+import {useTheme, useMediaQuery} from '@material-ui/core';
 import './shop.css';
+
 
 function finish() {
   alert('판매 종료 되었습니다.');
 }
 
 function November2021() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('xs'));
   return (
-  <div className="container" style={{padding:'100px 50px'}}>
-  <div className="row">
-    <Fade delay={500}>
-    <div className="col-md-6">
-      <img src={require('./image/clothes1Front.png').default} width="100%" alt=''/>
-    </div>
-    </Fade>
+    <div>
+    <div style={{padding:'50px 0px 50px 0px'}}>
+    <p align="middle">
 
-    <Fade delay={500}>
-    <div className="col-md-6 mt-4" style={{padding:'50px 0px 50px 0px'}}>
-      <h4 className="pt-5">ULRIM Project 1</h4>
-      <h6>Design by Jieun Kim</h6>
-      <p>37500 KRW</p>
-      <button className="btn btn-danger" onClick={() => finish()}>Pre-order</button>
-    </div>
-    </Fade>
+    <iframe width={matches? '90%' : '50%'} height={matches? '300' : '515'} src="https://www.youtube.com/embed/Uzx7cnBrFUM"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe>
+    </p></div>
+<div className="container" style={{padding:'100px 50px'}}>
+<div className="row">
+<Fade delay={500}>
+<div className="col-md-6">
+  <img src={require('./image/clothes2front.jpg').default} width="100%" alt=''/>
+</div>
+</Fade>
 
-    <div className="container2">
-    <Fade delay={150}>
-      <img src={require('./image/jieunProfile.jpg').default} width='90%' alt=''/>
-      <img src={require('./image/project1size.jpg').default} width="100%" alt=''/>
-      <div className='container3'>
-      <img src={require('./image/ulrimmodel.jpg').default} width="90%"/>
-      </div>
-      <div className='container3'>
-      <img src={require('./image/clothes1Front.png').default} width="100%" alt=''/>
-      </div>
-      <div className='container3'>
-      <img src={require('./image/clothes1Back.png').default} width="100%" alt=''/>
-      </div>
-      <List
-            sx={{
-            width: '100%',
-            maxWidth: 300,
-            bgcolor: 'background.paper',
-          }}>
-            <div className = 'location'>
-              <p style={{fontSize:'24px'}}>ULRIM 서포터즈 모델 착용 이미지</p>
-            </div>
-        </List>
-        <Divider style={{padding:'1px'}}/>
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/98.03.05/?hl=ko"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }98.03.05</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model1.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/p/CTSEtwQFRek/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }chae_dahaee</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model2.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/p/CTRTKBQBbHZ/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }do__ki</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model3.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/hyejeong__u/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }hyejeong__u</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model4.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        <img src={require('./image/p1model5.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/y0x_x0n/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }y0x_x0n</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model6.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/p/CTPMeaRv5a2/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }gundododo</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model7.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
-        
-        
-        <div className='instatext' style={{padding:'2rem 0rem 0rem 0rem'}}>
-          <a style ={{color:'black', textDecoration:'none'}}
-                href="https://www.instagram.com/p/CTO3HANFIqz/"
-                target="_blank"
-                rel="noopener noreferrer">
-          <p>{<InstagramIcon/> }olerror__</p>
-          </a>
-        </div>
-        <img src={require('./image/p1model8.png').default} width='90%' style={{padding:'2rem 1rem'}}/>
+<Fade delay={500}>
+<div className="col-md-6 mt-4" style={{padding:'0px 0px 200px 0px'}}>
+  <h4 className="pt-5">ULRIM Project 2</h4>
+  <h6>Design by Sehee Moon</h6>
+  <p style={{textDecoration:'line-through'}}>109,000 KRW</p>
+  <p>20% off => 87,200 KRW</p>
+  <a href="http://ulrim.shop/surl/O/13"
+        target="_blank"
+        rel="noopener noreferrer">
+  <button className="btn btn-danger" >Pre-order</button>
+  </a>
+</div>
+</Fade>
 
-
-      </Fade>
-    </div>
+<div className="container2">
+  <img src={require('./image/moonpage/001.jpg').default} width='100%' alt=''/>
+  <img src={require('./image/moonpage/002.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/003.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/004.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/005.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/006.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/007.jpg').default} width="100%" alt=''/>
+  <img src={require('./image/moonpage/008.jpg').default} width="100%" alt=''/>
   </div>
+</div>
+</div>
 </div>);
 }
 

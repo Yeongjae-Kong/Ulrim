@@ -64,7 +64,7 @@ if (matches) {
       </Route>
 
       <Route exact path="/shop">
-        <August2021></August2021>
+        <November2021></November2021>
       </Route>
 
       <Route exact path='/artists'>
@@ -135,7 +135,7 @@ else {
     </Route>
 
     <Route exact path="/shop">
-      <August2021></August2021>
+      <November2021></November2021>
     </Route>
 
     <Route exact path='/artists'>

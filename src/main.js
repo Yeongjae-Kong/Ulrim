@@ -20,7 +20,11 @@ return (
 
         </div>
 
-        
+        <div style={{padding:'50px 0px 50px 0px'}}>
+        <p align="middle">
+
+        <iframe width="90%" height="315" src="https://www.youtube.com/embed/Uzx7cnBrFUM"  frameborder="0">이 브라우저는 iframe을 지원하지 않습니다</iframe>
+        </p></div>
   <div className="container" style={{padding:'100px 50px'}}>
   <div className="row">
     <Fade delay={500}>
@@ -30,10 +34,11 @@ return (
     </Fade>
 
     <Fade delay={500}>
-    <div className="col-md-6 mt-4" style={{padding:'100px 0px 100px 0px'}}>
+    <div className="col-md-6 mt-4" style={{padding:'100px 0px 200px 0px'}}>
       <h4 className="pt-5">ULRIM Project 2</h4>
       <h6>Design by Sehee Moon</h6>
-      <p>109,000 KRW</p>
+      <p style={{textDecoration:'line-through'}}>109,000 KRW</p>
+      <p>20% off => 87,200 KRW</p>
       <a href="http://ulrim.shop/surl/O/13"
             target="_blank"
             rel="noopener noreferrer">
