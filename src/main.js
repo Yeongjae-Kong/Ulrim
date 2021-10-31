@@ -15,10 +15,47 @@ return (
         <p><Fade delay={1400}>Show your own style, ULRIM</Fade></p>
         </div>
 
-        <div className = "background-cover"></div>
+        <div className = "background-cover">
+        </div>
 
         </div>
 
+        
+  <div className="container" style={{padding:'100px 50px'}}>
+  <div className="row">
+    <Fade delay={500}>
+    <div className="col-md-6">
+      <img src={require('./image/clothes2front.jpg').default} width="100%" alt=''/>
+    </div>
+    </Fade>
+
+    <Fade delay={500}>
+    <div className="col-md-6 mt-4" style={{padding:'100px 0px 100px 0px'}}>
+      <h4 className="pt-5">ULRIM Project 2</h4>
+      <h6>Design by Sehee Moon</h6>
+      <p>109,000 KRW</p>
+      <a href="http://ulrim.shop/surl/O/13"
+            target="_blank"
+            rel="noopener noreferrer">
+      <button className="btn btn-danger" >Pre-order</button>
+      </a>
+    </div>
+    </Fade>
+
+    <div className="container2">
+      <img src={require('./image/moonpage/001.jpg').default} width='100%' alt=''/>
+      <img src={require('./image/moonpage/002.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/003.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/004.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/005.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/006.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/007.jpg').default} width="100%" alt=''/>
+      <img src={require('./image/moonpage/008.jpg').default} width="100%" alt=''/>
+      </div>
+    </div>
+  </div>
+</div>
+/* 
     <List
     sx={{
     width: '100%',
@@ -248,8 +285,7 @@ return (
     </div>
     </div>
 
-    </List>
-    </div>
+    </List> */
         );
     }
 
