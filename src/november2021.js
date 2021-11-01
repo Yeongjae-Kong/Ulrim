@@ -57,7 +57,6 @@ function November2021() {
   <img src={require('./image/moonpage/005.jpg').default} width="100%" alt=''/>
   <img src={require('./image/moonpage/006.jpg').default} width="100%" alt=''/>
   <img src={require('./image/moonpage/007.jpg').default} width="100%" alt=''/>
-  <img src={require('./image/moonpage/008.jpg').default} width="100%" alt=''/>
   </div>
 </div>
 </div>
