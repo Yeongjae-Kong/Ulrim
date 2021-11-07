@@ -32,14 +32,10 @@ function November2021() {
 <div className="col-md-6 mt-4" style={{padding:'0px 0px 200px 0px'}}>
   <h4 className="pt-5">ULRIM Project 2</h4>
   <h6>Design by Sehee Moon</h6>
-  <p style={{textDecoration:'line-through'}}>109,000 KRW</p>
-  <p>20% off => 87,200 KRW</p>
-  <a href="http://ulrim.shop/surl/O/13"
-        target="_blank"
-        rel="noopener noreferrer">
-  <button className="btn btn-danger" >Pre-order</button>
-  </a>
+  <p>109,000 KRW</p>
+  <button className="btn btn-danger" onClick={() => finish()}>Pre-order</button>
 </div>
+
 </Fade>
 
 <div className="container2">
