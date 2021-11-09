@@ -6,7 +6,6 @@ import awsconfig from './aws-exports';
 import { AmplifyAuthenticator, AmplifySignUp, AmplifySignIn } from '@aws-amplify/ui-react';
 import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
 import './login.css';
-
 // Amplify.configure(awsconfig);
 
 // const Login = () => {
@@ -55,7 +54,9 @@ function onSignIn(googleUser) {
 
 const Login = () => {
   return (
-<div class="g-signin2"  data-onsuccess="onSignIn"></div>);
+<div class="g-signin2"  data-onsuccess="onSignIn">
+</div>
+);
 }
 
 export default Login;

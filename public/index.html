@@ -34,14 +34,22 @@
     <title>ULRIM</title>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>Kakao.init("e9f96531071042817421bcbb562ceae6");</script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="677393915873-k88ks381964i07c9gvbkj4uvt3r3p0u2.apps.googleusercontent.com">
-    
     
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="677393915873-k88ks381964i07c9gvbkj4uvt3r3p0u2.apps.googleusercontent.com">
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+      }
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
