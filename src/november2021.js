@@ -9,6 +9,9 @@ import './shop.css';
 function finish() {
   alert('판매 종료 되었습니다.');
 }
+function fund() {
+  alert('펀딩 예정입니다.')
+}
 
 function November2021() {
   const theme = useTheme();
@@ -29,16 +32,15 @@ function November2021() {
 </Fade>
 
 <Fade delay={500}>
-<div className="col-md-6 mt-4" style={{padding:'0px 0px 200px 0px'}}>
+<div className="col-md-6 mt-4" style={matches? {padding:'0rem 0rem 0rem 0rem'}:{padding:'10rem 0rem 10rem 0rem'}}>
   <h4 className="pt-5">ULRIM Project 2</h4>
   <h6>Design by Sehee Moon</h6>
-  <p>109,000 KRW</p>
-  <button className="btn btn-danger" onClick={() => finish()}>Pre-order</button>
+  <button className="btn btn-danger" onClick={() => fund()}>Pre-order</button>
 </div>
 
 </Fade>
 
-<div className="container2">
+<div className="container2" style={matches? {padding:'10rem 0rem 0rem 0rem'}:{padding:'10rem 0rem 0rem 0rem'}}>
   <img src={require('./image/moonpage/001.jpg').default} width='100%' alt=''/>
   <img src={require('./image/moonpage/002.jpg').default} width="100%" alt=''/>
   

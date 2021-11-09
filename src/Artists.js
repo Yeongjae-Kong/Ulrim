@@ -102,7 +102,7 @@ function Media(props) {
 
    </div>
    
-   <div className="col-md-6" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
+   <div className="col-md-12" style={{cursor: 'pointer'}} style = {{padding:'30px 0px 50px 0px'}}>
       
       <a href="https://www.instagram.com/seheemoon/?hl=ko"
           target="_blank"
