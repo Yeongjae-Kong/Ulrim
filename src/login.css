@@ -6,3 +6,7 @@
     text-align: center;
     padding-top:1rem;
   }
+
+  :root {
+    --amplify-primary-color: black;
+  }
