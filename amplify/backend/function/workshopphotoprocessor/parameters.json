@@ -1,0 +1,4 @@
+{
+	"S3UserfilesBucketName": "amplifytest5b98f6099cd5489dafe5d947e06c09c1163855-dev",
+	"DynamoDBPhotosTableArn": " arn:aws:dynamodb:ap-northeast-2:213535075855:table/Photo-4d4hs6csefczln6rdroreriuje-dev"
+}

@@ -19,7 +19,18 @@
         }
       },
       "auth": {
-        "amplifytest620bf5b2": {}
+        "amplifytest620bf5b2": {},
+        "true": {}
+      },
+      "function": {
+        "S3Triggerdcf91cc8": {
+          "deploymentBucketName": "amplify-amplifytest-dev-163855-deployment",
+          "s3Key": "amplify-builds/S3Triggerdcf91cc8-4b643242434863494874-build.zip"
+        },
+        "workshopphotoprocessor": {
+          "deploymentBucketName": "amplify-amplifytest-dev-163855-deployment",
+          "s3Key": "amplify-builds/workshopphotoprocessor-634f536b4c5763726c37-build.zip"
+        }
       }
     }
   },

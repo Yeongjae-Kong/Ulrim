@@ -1,45 +1,46 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createTask = /* GraphQL */ `
+  mutation CreateTask(
+    $owner: String!
+    $title: String!
+    $taskStatus: String!
+    $description: String!
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createTask(
+      owner: $owner
+      title: $title
+      taskStatus: $taskStatus
+      description: $description
+    ) {
       id
-      name
+      owner
+      title
       description
-      createdAt
-      updatedAt
+      taskStatus
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    updateTodo(input: $input, condition: $condition) {
+export const updateTaskStatus = /* GraphQL */ `
+  mutation UpdateTaskStatus($id: ID!, $taskStatus: String!) {
+    updateTaskStatus(id: $id, taskStatus: $taskStatus) {
       id
-      name
+      owner
+      title
       description
-      createdAt
-      updatedAt
+      taskStatus
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    deleteTodo(input: $input, condition: $condition) {
+export const updateTaskBody = /* GraphQL */ `
+  mutation UpdateTaskBody($id: ID!, $title: String!, $description: String!) {
+    updateTaskBody(id: $id, title: $title, description: $description) {
       id
-      name
+      owner
+      title
       description
-      createdAt
-      updatedAt
+      taskStatus
     }
   }
 `;
